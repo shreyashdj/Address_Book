@@ -9,6 +9,14 @@ public class AddressBook {
 
 		System.out.println(" Welcome to Address Book Prgram");
 		
+		Contacts person1 = new Contacts();
+		
+		person1.addContact();
+		
+		System.out.println();
+		
+		person1.displayContact();
+		
 	}
 
 }
