@@ -36,7 +36,7 @@ public class AddressBookMain {
 
 			case 5 -> System.out.println("\n Exited Successfully");
 			
-			default -> System.out.print(" Option not Available \n");
+			default -> System.out.print("\n Option not Available \n");
 			
 			}
 			
