@@ -15,28 +15,30 @@ public class AddressBookMain {
 		
 		/*
 		 *		used do-while loop and switch-case to make console for activities like
-		 *		Add contact, Display contact, Exit
+		 *		Add contact, Edit Contact, Display contact, Exit
 		 */
 		
 		do {
 			System.out.println("\n *** Available Options *** ");
-			System.out.println(" 1. Add Contact \n 2. Display Contact \n 3. Exit");
+			System.out.println(" 1. Add Contact \n 2. Edit Contact \n 3. Display Contact \n 4. Exit");
 			System.out.print(" Enter option to perform activity : ");
 			option = addressBook.scan.nextInt();
 			
 			switch (option) {
 			
 			case 1 -> addressBook.addContact();
+			
+			case 2 -> addressBook.editContact();
 
-			case 2 -> addressBook.displayContact();
+			case 3 -> addressBook.displayContact();
 
-			case 3 -> System.out.println("\n Exited Successfully");
+			case 4 -> System.out.println("\n Exited Successfully");
 			
 			default -> System.out.print(" Option not Available \n");
 			
 			}
 			
-		} while(option != 3);
+		} while(option != 4);
 		
 	}
 }
