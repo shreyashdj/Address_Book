@@ -1,11 +1,13 @@
 package com.bridgelabz.addressBook;
 
-/*
+/**
  * @author SHREYASH JADHAV
  */
 public class Contact {
 	
-	// variables to store details of contact
+	/*
+	 *  variables to store details of contact
+	 */
 	
 	private String firstName;
 	private String lastName;
@@ -16,7 +18,7 @@ public class Contact {
 	private String phoneNumber;
 	private String emailId;
 	
-	/*
+	/**
 	 *	For each variable creating getter and setter methods
 	 *	to get values from the variable and to assign value to variable respectively
 	 */
