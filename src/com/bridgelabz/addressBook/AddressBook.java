@@ -1,16 +1,16 @@
 package com.bridgelabz.addressBook;
 
-import java.util.ArrayList;		// imported ArrayList class
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;		// imported Scanner class
+import java.util.Scanner;
 
 /**
  * @author SHREYASH JADHAV
  */
 public class AddressBook {
 	
-	ArrayList<Contact> contactList;// = new ArrayList<>();	//	created object of ArrayList class
+	ArrayList<Contact> contactList;			//	created object of ArrayList class
 	static HashMap<String, ArrayList<Contact>> addressBookList = new HashMap<>();		// created object of HashMap class
 	
 	Scanner scan = new Scanner(System.in);				//	created object of Scanner class
@@ -26,12 +26,8 @@ public class AddressBook {
 		 */
 		Contact contact = new Contact();
 		
-	//	System.out.print("\n Enter First Name : ");
-	//	contact.setFirstName(scan.next());
 		contact.setFirstName(firstName);
 		
-	//	System.out.print(" Enter Last Name  : ");
-	//	contact.setLastName(scan.next());
 		contact.setLastName(lastName);
 		
 		System.out.print(" Enter Address    : ");
@@ -111,10 +107,7 @@ public class AddressBook {
 							} else {
 								System.out.println("\n Contact Already Available");
 							}
-//				  		System.out.print("\n Enter First Name : ");
-//				  		contact.setFirstName(scan.next());			
-//				  		System.out.print(" Enter Last Name  : ");
-//				  		contact.setLastName(scan.next());
+						
 				  	} case 2 -> {
 				  		System.out.print("\n Enter Address    : ");
 				  		contact.setAddress(scan.next());
@@ -161,6 +154,9 @@ public class AddressBook {
 		}		
 	}
 
+	/**
+	 *	created searchContact method to search contact by name
+	 */
 	public Contact searchContact(String firstName, String lastName) {
 		/*
 		 *	taking user input of first name of contact
