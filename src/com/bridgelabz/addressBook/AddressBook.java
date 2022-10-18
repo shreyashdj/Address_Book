@@ -1,5 +1,6 @@
 package com.bridgelabz.addressBook;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,13 +20,15 @@ public class AddressBook {
     static HashMap<String, ArrayList<Contact>> addressBookList = new HashMap<>();
     /**
      *  created addDetails method to add contact details
-     *  taking parameters => String firstName, String lastName, ArrayList<Contact> contactList
+     *  taking parameters => String firstName, String lastName, ArrayList<Contact> contactList 
      */
     public void addDetails(String firstName, String lastName, ArrayList<Contact> contactList) {
         /*
          *  created contact object of class Contact
          *  taking user input to set contact details
-         *  at end adding contact to contactList
+         *  then adding contact to contactList
+         *  created object of class FileIO
+         *  call method writeAddressBook and pass String representation of contact object
          */
         Contact contact = new Contact();
         contact.setFirstName(firstName);
@@ -43,6 +46,12 @@ public class AddressBook {
         System.out.print(" Enter Email Id   : ");
         contact.setEmailId(scan.next());
         contactList.add(contact);
+        FileIO fileIO = new FileIO();
+        try {
+			fileIO.writeAddressBook(contact.toString());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
     /**
      *	created editDetails method to edit details of contact

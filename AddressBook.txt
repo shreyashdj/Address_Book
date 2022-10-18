@@ -1,0 +1,10 @@
+           *************** Welocme to AddressBook ***************
+
+ Contact { First Name = 'shreyas', Last Name = 'jad', Address = 'sdf', City = 'gh',
+			 State = 'fh', Zip Code = 'fgr', Phone Number = 'bnhg', Email Id = 'cv }
+
+ Contact { First Name = 'sdx', Last Name = 'fdh', Address = 'ry', City = 'gfj',
+			 State = 'dgs', Zip Code = 'er', Phone Number = 'gfj', Email Id = 'dsg }
+
+ Contact { First Name = 'dg', Last Name = 're', Address = 'sgd', City = 'shes',
+			 State = 'sgd', Zip Code = 'df', Phone Number = 'dfh', Email Id = 'sgd }
